@@ -1,0 +1,163 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
+using System.Configuration;
+
+namespace Delivary
+{
+    public partial class WebForm1 : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            lblMsg.Text = "";
+
+        }
+
+        protected void btnAdd_Click(object sender, EventArgs e)
+        {
+            if (btnAdd.Text == "Save")
+            {
+                SqlConnection conn = new SqlConnection();
+                conn.ConnectionString = ConfigurationManager.ConnectionStrings[1].ToString();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "DriverManager";
+                cmd.Parameters.AddWithValue("@Cheak", 'a');
+                cmd.Parameters.AddWithValue("@Name", TextBox3.Text);
+                cmd.Parameters.AddWithValue("@NationalID", TextBox4.Text);
+                cmd.Parameters.AddWithValue("@Address", TextBox5.Text);
+                cmd.Parameters.AddWithValue("@PhoneNumber", TextBox6.Text);
+                cmd.Parameters.AddWithValue("@CarType", TextBox7.Text);
+                cmd.Parameters.AddWithValue("@CarNumber", TextBox8.Text);
+
+                conn.Open();
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                    lblMsg.Text = "Saved";
+                }
+                catch (Exception ex)
+                {
+
+                    lblMsg.Text = ex.Message;
+                }
+                conn.Close();
+
+                TextBox3.Enabled = false; TextBox4.Enabled = false;
+                TextBox5.Enabled = false; TextBox6.Enabled = false;
+                TextBox7.Enabled = false; TextBox8.Enabled = false;
+
+                TextBox3.Text = ""; TextBox4.Text = "";
+                TextBox5.Text = ""; TextBox6.Text = "";
+                TextBox7.Text = ""; TextBox8.Text = "";
+
+                btnAdd.Text = "Add";
+            }
+            else
+            {
+                TextBox3.Enabled = true; TextBox4.Enabled = true;
+                TextBox5.Enabled = true; TextBox6.Enabled = true;
+                TextBox7.Enabled = true; TextBox8.Enabled = true;
+
+                btnAdd.Text = "Save";
+            }
+            //btnsave.Visible = true;
+
+            //string t1 = TextBox3.Text;
+            //string t2 = TextBox4.Text;
+            //string t3 = TextBox5.Text;
+            //string t4 = TextBox6.Text;
+            //string t5 = TextBox7.Text;
+            //string t6 = TextBox8.Text;
+           
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            //SqlConnection conn = new SqlConnection();
+            //conn.ConnectionString = ConfigurationManager.ConnectionStrings[1].ToString();
+            //SqlCommand cmd = new SqlCommand();
+            //cmd.Connection = conn;
+            //cmd.CommandType = CommandType.StoredProcedure;
+            //cmd.CommandText = "DriverManager";
+            //cmd.Parameters.AddWithValue("@Cheak", 'a');
+            //cmd.Parameters.AddWithValue("@Name", TextBox3.Text);
+            //cmd.Parameters.AddWithValue("@NationalID", TextBox4.Text);
+            //cmd.Parameters.AddWithValue("@Address", TextBox5.Text);
+            //cmd.Parameters.AddWithValue("@PhoneNumber", TextBox6.Text);
+            //cmd.Parameters.AddWithValue("@CarType", TextBox7.Text);
+            //cmd.Parameters.AddWithValue("@CarNumber", TextBox8.Text);
+
+            //conn.Open();
+
+            //try
+            //{
+            //    cmd.ExecuteNonQuery();
+            //    lblMsg.Text = "Saved";
+            //}
+            //catch (Exception ex)
+            //{
+
+            //    lblMsg.Text = ex.Message;
+            //}
+            //conn.Close();
+
+            //if (lblMsg.Text=="Saved")
+            //{
+            //    TextBox3.Enabled = false; TextBox4.Enabled = false;
+            //    TextBox5.Enabled = false; TextBox6.Enabled = false;
+            //    TextBox7.Enabled = false; TextBox8.Enabled = false;
+
+            //    TextBox3.Text = ""; TextBox4.Text = "";
+            //    TextBox5.Text = ""; TextBox6.Text = "";
+            //    TextBox7.Text = ""; TextBox8.Text = "";
+
+            //    btnAdd.Enabled = true;
+            //    btnsave.Visible = false;
+            //}
+
+            
+
+
+        }
+
+        protected void btnModify_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lblMsg.Text = "hjhgfghjklhgfdfg";
+            if (RadioButtonList1.SelectedValue == "id")
+            {
+                DropDownList1.DataTextField = "ID";
+                DropDownList1.DataValueField = "ID";
+            }
+            else
+            {
+                DropDownList1.DataTextField = "Name";
+                DropDownList1.DataValueField = "Name";
+            }
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnid_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+
+        
+    }
+}

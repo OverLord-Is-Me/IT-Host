@@ -1,0 +1,95 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="Support.ascx.cs" Inherits="WUC_Support" %>
+<style type="text/css">
+    .style4
+    {
+        width: 711px;
+        height: 280px;
+    }
+</style>
+
+<asp:ScriptManager ID="ScriptManager1" runat="server">
+</asp:ScriptManager>
+<asp:UpdatePanel ID="UpdatePanel1" runat="server">
+    <ContentTemplate>
+        <table align="center" class="style4">
+            <tr>
+                <td colspan="3" style="text-align: center">
+                    <asp:Label ID="Label4" runat="server" Font-Bold="True" Font-Names="Algerian" 
+                        Font-Overline="True" Font-Size="XX-Large" Font-Underline="True" 
+                        Text="Search For SomeOne!!!"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center">
+                    <asp:Label ID="lblMsg" runat="server" Font-Size="XX-Large" ForeColor="Red" 
+                        Text="Label" Visible="False"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <asp:Label ID="Label5" runat="server" Font-Bold="True" Font-Names="Algerian" 
+                        Font-Overline="True" Font-Size="X-Large" Font-Underline="True" 
+                        Text="Search by :"></asp:Label>
+                </td>
+                <td style="text-align: left">
+                    <asp:RadioButtonList ID="RadioButtonList2" runat="server" Font-Names="Algerian" 
+                        Font-Size="X-Large" RepeatDirection="Horizontal" style="text-align: left">
+                        <asp:ListItem Value="FullName">Name     ,</asp:ListItem>
+                        <asp:ListItem>NationalId</asp:ListItem>
+                    </asp:RadioButtonList>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label6" runat="server" Font-Bold="True" Font-Names="Algerian" 
+                        Font-Overline="True" Font-Size="X-Large" Font-Underline="True" 
+                        Text="Search by :"></asp:Label>
+                </td>
+                <td colspan="2">
+                    <asp:TextBox ID="TextBox1" runat="server" style="text-align: center" 
+                        Width="273px"></asp:TextBox>
+                    <asp:Button ID="btnsearch" runat="server" onclick="Button1_Click" Text="Search" 
+                        Width="65px" />
+                    <asp:Button ID="Button1" runat="server" Enabled="False" 
+                        onclick="Button1_Click1" Text="Delete" Width="65px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td colspan="2">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center">
+                    <asp:GridView ID="GridView1" runat="server" BackColor="White" 
+                        BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" 
+                        ForeColor="Black" GridLines="Vertical" 
+                        onselectedindexchanged="GridView1_SelectedIndexChanged1">
+                        <AlternatingRowStyle BackColor="#CCCCCC" />
+                        <Columns>
+                            <asp:ButtonField ButtonType="Button" CommandName="Select" HeaderText="Select" 
+                                ShowHeader="True" Text="&gt;&gt;&gt;" />
+                        </Columns>
+                        <FooterStyle BackColor="#CCCCCC" />
+                        <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+                        <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                        <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                        <SortedAscendingHeaderStyle BackColor="#808080" />
+                        <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                        <SortedDescendingHeaderStyle BackColor="#383838" />
+                    </asp:GridView>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+    </ContentTemplate>
+</asp:UpdatePanel>
+
+

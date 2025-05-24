@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Category">
+    <Position X="1.25" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgwAQEAAEQAAAAACAAAAAACAAAMAAAoAgABAAACgABA=</HashCode>
+      <FileName>App_Code\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBC" Collapsed="true">
+    <Position X="11.5" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAQBAAAAAAAAAAQAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>App_Code\DBC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlingClass">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAIAIAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAACgABA=</HashCode>
+      <FileName>App_Code\ControlingClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Register">
+    <Position X="2.75" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAYEALAABOAAAAAAAGAAAQEQACACAAAQAACwBAE=</HashCode>
+      <FileName>App_Code\Register.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Product">
+    <Position X="4.25" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAQAaCAAAAgEAQAQIAQAADCIAAMAQAAEiHCAgADgAAQ=</HashCode>
+      <FileName>App_Code\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Orderdetails">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAASAAAGAAAAiQAgAAABgSAgAMAQAAAAgAAgAHBAAA=</HashCode>
+      <FileName>App_Code\Orderdetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Driver">
+    <Position X="7.25" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BAIAAAAEACAAgEGAAAAAYEQAAAMIAAACDAABAAKUAII=</HashCode>
+      <FileName>App_Code\Driver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Orders" Collapsed="true">
+    <Position X="10.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YACAAAAWQACCQgeEAEACAQAAAAJABhAQiAAAACCCAAA=</HashCode>
+      <FileName>App_Code\Orders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cart">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IAIAAAIBBAAAAAAAAAAAAAMAgAgAAAAEAAAgCACEAAA=</HashCode>
+      <FileName>App_Code\Cart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f810af2c-7a39-4977-98af-d9cfa79a2fda": {
+      "ProjectGuid": "f810af2c-7a39-4977-98af-d9cfa79a2fda",
+      "DisplayName": "it-host3",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
